@@ -105,7 +105,8 @@ const ChatPage = ({ name, role, description, slug }) => {
     setIsTyping(true);
 
     try {
-      const route = `http://localhost:8080/api/v1/${slug}/${slug}-chat`;
+      // eslint-disable-next-line no-undef
+      const route = `${process.env.BACKEND_URL}/api/v1/${slug}/${slug}-chat`;
       const response = await fetch(route, {
         method: "POST",
         headers: {
