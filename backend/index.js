@@ -31,6 +31,10 @@ app.use("/api/v1/hitesh", hiteshRoute)
 app.use("/api/v1/rakesh", rakeshRoute)
 app.use("/api/v1/piyush", piyushRoute)
 
+app.get("/", (req, res) => {
+  res.send("server is running")
+})
+
 app.listen(port, () => {
     console.log(`Server running on http://localhost:${port}`)
 });
