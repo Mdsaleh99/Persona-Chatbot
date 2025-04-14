@@ -113,7 +113,7 @@ const ChatPage = ({ name, role, description, slug }) => {
         headers: {
           "Content-Type": "application/json",
         },
-        credentials: 'include',
+        // credentials: 'include',
         body: JSON.stringify({
           message: input,
         }),
