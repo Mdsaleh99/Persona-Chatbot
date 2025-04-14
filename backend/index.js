@@ -21,6 +21,8 @@ app.use(
   })
 );
 
+app.options("*", cors()); 
+
 // const port = process.env.PORT || 5000;
 
 export const client = new Groq({
