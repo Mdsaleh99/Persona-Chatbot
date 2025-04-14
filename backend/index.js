@@ -8,7 +8,7 @@ import piyushRoute from "./routes/piyushPersona.route.js"
 
 dotenv.config();
 app.use((req, res, next) => {
-  res.header("Access-Control-Allow-Origin", "*"); // Allow all origins
+  res.header("Access-Control-Allow-Origin", process.env.FRONTEND_URL); // Allow all origins
   next();
 });
 
