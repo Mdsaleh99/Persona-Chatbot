@@ -6,7 +6,7 @@
       "src": "/api/v1/(.*)",
       "methods": ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
       "headers": {
-        "Access-Control-Allow-Origin": "https://persona-chatbot-frontend.vercel.app",
+        "Access-Control-Allow-Origin": "https://talkoverchai.mdsaleh.online",
         "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
         "Access-Control-Allow-Headers": "Content-Type, Authorization"
       },
