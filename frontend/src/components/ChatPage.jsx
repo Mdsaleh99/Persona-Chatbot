@@ -120,7 +120,7 @@ const ChatPage = ({ name, role, description, slug }) => {
       });
 
       const data = await response.json();
-      console.log(data);
+      // console.log(data);
       const formattedReply = formatAIMessage(data.reply);
       const aiMessage = {
         id: Date.now() + 1,
