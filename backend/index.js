@@ -41,7 +41,7 @@ app.use(
 //   })
 // );
 
-app.options("*", cors()); 
+// app.options("*", cors()); 
 
 // const port = process.env.PORT || 5000;
 
