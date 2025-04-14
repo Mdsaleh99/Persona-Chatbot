@@ -7,6 +7,10 @@ import rakeshRoute from "./routes/rakeshPersona.route.js"
 import piyushRoute from "./routes/piyushPersona.route.js"
 
 dotenv.config();
+app.use((req, res, next) => {
+  res.header("Access-Control-Allow-Origin", "*"); // Allow all origins
+  next();
+});
 
 const app = express();
 app.use(express.json());
